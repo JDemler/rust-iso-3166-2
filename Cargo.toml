@@ -1,0 +1,8 @@
+[package]
+name = "iso-3166-2"
+version = "0.1.0"
+authors = ["Jakob Demler <jdemler@curry-software.com>"]
+
+[dependencies]
+serde_derive = "*"
+serde = "*"
