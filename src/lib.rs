@@ -26,11 +26,9 @@ pub fn find(code: &str) -> Option<&'static Iso31662> {
 pub fn all_parents(mut code: &str) -> Vec<&'static Iso31662> {
     let mut result = vec![];
     loop {
-        println!("loopy");
         if let Some(value) = find(code) {
             result.push(value);
             if value.parent.is_none() {
-                println!("No Parent");
                 return result;
             }
             code = value.parent.unwrap();
